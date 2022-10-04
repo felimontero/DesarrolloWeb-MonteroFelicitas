@@ -75,18 +75,7 @@ p {
     border: 10px solid lightpink;
 }
 
-.flexContainer {
-    height: 100%;
-    width: 100%;
-    background-color: antiquewhite;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 350px;
-    border: solid 8px pink;
-    margin: 20px 30px 20px 30px;
-    justify-content: space-between;
-}
+
 
 .row {
     display: flex;
@@ -148,6 +137,8 @@ aside {
 
 .ubic {
     margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .box:hover {
@@ -182,8 +173,12 @@ body {
 
 header {
     font-size: large;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
 }
 
 header,
@@ -202,7 +197,6 @@ nav ul,
     list-style: none;
     text-decoration: none;
     justify-content: center;
-
 }
 
 a {
@@ -211,27 +205,22 @@ a {
     list-style: none;
 }
 
+h1 {
+    color: black;
+    margin-left: 60px;
+    border: 10px solid palevioletred;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+}
 
 footer {
     padding: 3em;
-    margin-bottom: 0px;
-    margin-top: 50px;
-    margin-right: -50px;
+    margin-bottom: 0;
+    margin-top: 1.5em;
     align-items: center;
     background-color: rosybrown;
-}
-
-.flexContainer {
-    height: 100%;
-    width: 100%;
-    background-color: antiquewhite;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 350px;
-    border: solid 8px pink;
-    margin: 20px 30px 20px 30px;
-    justify-content: space-between;
 }
 
 .fotos {
@@ -241,17 +230,17 @@ footer {
     grid-template-rows: 1fr;
     gap: 5px;
     justify-items: center;
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 150px;
     border: 8px solid lightpink;
     margin-left: 20px;
     margin-top: 15px;
-
+    align-items: center;
 }
 
 .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 3em;
     background-color: bisque;
@@ -295,15 +284,19 @@ h1 {
 }
 
 .envoltura {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     margin-bottom: 1.5em;
     display: grid;
+    align-items: center;
     gap: 2em;
+    min-width: 100vh;
     grid-template-areas:
         "header"
         "nav"
         "h1"
+        "fotos"
         "cabañas"
+        "sidebar"
         "footer";
 }
 
@@ -314,7 +307,7 @@ h1 {
     padding: 30px;
     display: flex;
     flex-direction: row;
-    width: 350px;
+    width: 150px;
     border: solid 8px pink;
     margin: 20px 30px 20px 30px;
     justify-content: space-between;
@@ -337,9 +330,14 @@ h1 {
     border: solid plum;
     text-decoration: none;
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
     border: palevioletred solid 8px;
 }
+
+
 
 @media (min-width:500px) {
 
@@ -351,6 +349,7 @@ h1 {
         align-items: center;
         display: grid;
         gap: 2em;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "header"
             "nav"
@@ -402,7 +401,6 @@ h1 {
         padding: 3em;
         margin-bottom: 0px;
         margin-top: 50px;
-        margin-right: -50px;
         align-items: center;
         background-color: rosybrown;
     }
@@ -414,36 +412,37 @@ h1 {
         padding: 30px;
         display: flex;
         flex-direction: row;
-        width: 350px;
+        width: 250px;
         border: solid 8px pink;
         margin: 20px 30px 20px 30px;
         justify-content: space-between;
         align-items: center;
     }
 
+
     .row {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         padding: 3em;
         background-color: bisque;
     }
 
     .col {
-        padding: 3em;
-        margin: 0px;
-        flex-direction: row;
+        padding: 5em;
+        margin: 10px;
+        flex-direction: column;
     }
 
     .formulario {
         background-color: pink;
         padding: 20px;
-        margin-left: 20px;
+        margin-left: 10px;
         align-items: center;
         border: solid plum;
         text-decoration: none;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         border: palevioletred solid 8px;
     }
 
@@ -455,7 +454,7 @@ h1 {
 
     header,
     .text {
-        color: aliceblue;
+        color: whitesmoke;
     }
 
     a {
@@ -473,6 +472,17 @@ h1 {
         justify-content: center;
     }
 
+    .box {
+        margin-left: 20px;
+    }
+
+    .ubic {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 
@@ -487,6 +497,7 @@ h1 {
         display: grid;
         gap: 2em;
         max-width: 100vh;
+        grid-template-columns: 1fr;
     }
 
     nav ul {
@@ -592,6 +603,24 @@ h1 {
         display: flex;
         border: palevioletred solid 8px;
     }
+
+    h1 {
+        color: black;
+        margin: 30px 40px 30px 40px;
+        border: 10px solid palevioletred;
+        top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .box1 {
+        background-color: palevioletred;
+        transition-property: all;
+        transition-duration: 5s;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media(min-width:1024px) {
@@ -646,7 +675,7 @@ h1 {
         display: grid;
         min-width: 100%;
         gap: 2em;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 
     .cabañas {
@@ -726,6 +755,20 @@ h1 {
         background-color: palevioletred;
         transition-property: all;
         transition-duration: 5s;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        color: black;
+        margin: 30px 30px 30px 30px;
+        border: 10px solid palevioletred;
+        top: 20px;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    height: 100%;
     }
 
 }
