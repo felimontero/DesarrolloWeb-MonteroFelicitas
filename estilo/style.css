@@ -1,0 +1,783 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: palevioletred;
+  padding: 10px;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+header nav ul li {
+  list-style-type: none;
+  background-color: pink;
+  display: flex;
+  text-align: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: palevioletred;
+  padding: 20px;
+}
+
+h1 {
+  border: 10px solid palevioletred;
+}
+
+h2 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.formulario {
+  background-color: pink;
+  padding: 50px;
+  margin-left: 50px;
+  align-items: center;
+  border: solid plum;
+  text-decoration: none;
+  display: flex;
+  border: palevioletred solid 8px;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-color: antiquewhite;
+  }
+  body .formulario {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 500px) and (min-width: 768px) {
+  body {
+    background-color: whitesmoke;
+  }
+  body .formulario {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 500px) and (min-width: 1024px) {
+  body {
+    background-color: white;
+  }
+  body .formulario {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: cornsilk;
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  background-color: palevioletred;
+  padding: 10px;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  background-color: pink;
+  display: flex;
+  text-align: center;
+}
+
+footer {
+  padding: 3em;
+  margin-bottom: 0px;
+  margin-top: 250px;
+  margin-right: -50px;
+  align-items: center;
+  background-color: rosybrown;
+}
+
+a {
+  text-decoration: none;
+  color: palevioletred;
+  padding: 20px;
+}
+
+h1 {
+  color: black;
+  margin: 30px 40px 30px 40px;
+  border: 10px solid palevioletred;
+  top: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+h2 {
+  color: aliceblue;
+  text-align: center;
+}
+
+p {
+  color: black;
+  padding: 40px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 60px;
+  border: 10px solid lightpink;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  background-color: bisque;
+}
+
+.col {
+  padding: 10px;
+  margin: 10px;
+  flex-direction: row;
+}
+
+.ft {
+  width: 300px;
+  height: 250px;
+  justify-content: space-around;
+}
+
+aside {
+  justify-content: center;
+  border: pink;
+}
+
+.descri {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 8px solid lightpink;
+  padding: 20px;
+  background-color: antiquewhite;
+  margin: 20px 30px 20px 30px;
+}
+
+.ima {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 8px solid lightpink;
+  height: 400px;
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+
+.formulario {
+  background-color: pink;
+  padding: 50px;
+  margin-left: 50px;
+  align-items: center;
+  border: solid plum;
+  text-decoration: none;
+  display: flex;
+  border: palevioletred solid 8px;
+}
+
+.ubic {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.box:hover {
+  border-radius: 6px;
+  transform: scale(4);
+}
+
+.box1 {
+  background-color: palevioletred;
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+/*mobile first 0px-500px*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header {
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+
+header,
+.text {
+  color: aliceblue;
+}
+
+nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav ul,
+.cabañas {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: palevioletred;
+  list-style: none;
+}
+
+h1 {
+  color: black;
+  margin-left: 60px;
+  border: 10px solid palevioletred;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+footer {
+  padding: 3em;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+  align-items: center;
+  background-color: rosybrown;
+}
+
+.fotos {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  justify-items: center;
+  width: 200px;
+  height: 150px;
+  border: 8px solid lightpink;
+  margin-left: 20px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  background-color: bisque;
+}
+
+.col {
+  padding: 3em;
+  margin: 0px;
+  flex-direction: row;
+}
+
+/*declaro el nombre de las areas para la grilla*/
+header {
+  grid-area: header;
+}
+
+.cabañas {
+  grid-area: cabañas;
+}
+
+nav {
+  grid-area: nav;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+.fotos {
+  grid-area: fotos;
+}
+
+.elLugar {
+  grid-area: elLugar;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.envoltura {
+  background-color: whitesmoke;
+  margin-bottom: 1.5em;
+  display: grid;
+  align-items: center;
+  gap: 2em;
+  min-width: 100vh;
+  grid-template-areas: "header" "nav" "h1" "fotos" "cabañas" "sidebar" "footer";
+}
+
+.flexContainer {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  border: solid 8px pink;
+  margin: 20px 30px 20px 30px;
+  justify-content: space-between;
+}
+
+.row {
+  grid-area: row;
+}
+
+.col {
+  grid-area: col;
+}
+
+.formulario {
+  grid-area: formulario;
+  background-color: pink;
+  padding: 50px;
+  margin-left: 50px;
+  align-items: center;
+  border: solid plum;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  border: palevioletred solid 8px;
+}
+
+@media (min-width: 500px) {
+  .envoltura {
+    background-color: antiquewhite;
+    margin-bottom: 1.5em;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "h1" "cabañas" "footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+  }
+  nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  nav ul,
+.cabañas {
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .fotos {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    justify-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    border: 8px solid lightpink;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  footer {
+    padding: 3em;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    align-items: center;
+    background-color: rosybrown;
+  }
+  .flexContainer {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    border: solid 8px pink;
+    margin: 20px 30px 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    background-color: bisque;
+  }
+  .col {
+    padding: 5em;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .formulario {
+    background-color: pink;
+    padding: 20px;
+    margin-left: 10px;
+    align-items: center;
+    border: solid plum;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    border: palevioletred solid 8px;
+  }
+  header {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+  }
+  header,
+.text {
+    color: whitesmoke;
+  }
+  a {
+    text-decoration: none;
+    color: palevioletred;
+    list-style: none;
+  }
+  h1 {
+    color: black;
+    margin: 30px 40px 30px 40px;
+    border: 10px solid palevioletred;
+    top: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .box {
+    margin-left: 20px;
+  }
+  .ubic {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .envoltura {
+    background-color: antiquewhite;
+    margin-bottom: 1.5em;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    gap: 2em;
+    max-width: 100vh;
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+  }
+  nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+  }
+  nav ul,
+.cabañas {
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    list-style-type: none;
+  }
+  header {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+  }
+  header,
+.text {
+    color: aliceblue;
+    min-width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: palevioletred;
+    list-style: none;
+  }
+  .fotos {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+    border: 8px solid lightpink;
+    margin: 3em;
+  }
+  footer {
+    padding: 3em;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-right: -50px;
+    align-items: center;
+    background-color: rosybrown;
+  }
+  .flexContainer {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    border: solid 8px pink;
+    margin: 20px 30px 20px 30px;
+    justify-content: space-between;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: bisque;
+  }
+  .col {
+    padding: 10px;
+    margin: 10px;
+    flex-direction: row;
+  }
+  .formulario {
+    background-color: pink;
+    padding: 50px;
+    margin-left: 50px;
+    align-items: center;
+    border: solid plum;
+    text-decoration: none;
+    display: flex;
+    border: palevioletred solid 8px;
+  }
+  h1 {
+    color: black;
+    margin: 30px 40px 30px 40px;
+    border: 10px solid palevioletred;
+    top: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .box1 {
+    background-color: palevioletred;
+    transition-property: all;
+    transition-duration: 5s;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    width: 100%;
+  }
+  header {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    background-color: palevioletred;
+  }
+  header,
+.text {
+    color: aliceblue;
+    width: 100%;
+  }
+  nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  nav ul,
+.cabañas {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    min-width: 100vh;
+  }
+  a {
+    text-decoration: none;
+    color: palevioletred;
+    list-style: none;
+  }
+  .envoltura {
+    background-color: whitesmoke;
+    margin-bottom: 1.5em;
+    text-align: center;
+    display: grid;
+    min-width: 100%;
+    gap: 2em;
+    grid-template-columns: 1fr;
+  }
+  .cabañas {
+    padding: 1.5em;
+    height: auto;
+    margin: 0;
+    text-align: center;
+  }
+  .fotos {
+    background-color: white;
+    display: grid;
+    gap: 5px;
+    justify-items: center;
+    width: 475px;
+    height: 450px;
+    border: 8px solid lightpink;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .flexContainer {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    border: solid 8px pink;
+    margin: 20px 30px 20px 30px;
+    justify-content: space-between;
+  }
+  footer {
+    padding: 3em;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-right: -50px;
+    align-items: center;
+    background-color: rosybrown;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: bisque;
+  }
+  .col {
+    padding: 10px;
+    margin: 10px;
+    flex-direction: row;
+  }
+  .formulario {
+    background-color: pink;
+    padding: 50px;
+    margin-left: 50px;
+    align-items: center;
+    border: solid plum;
+    text-decoration: none;
+    display: flex;
+    border: palevioletred solid 8px;
+  }
+  .box:hover {
+    border-radius: 6px;
+    transform: scale(4);
+  }
+  .box1 {
+    background-color: palevioletred;
+    transition-property: all;
+    transition-duration: 5s;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    color: black;
+    margin: 30px 30px 30px 30px;
+    border: 10px solid palevioletred;
+    top: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+.lightpink {
+  background-color: lightpink;
+}
+
+.imag {
+  width: 75px;
+  height: 75px;
+}/*# sourceMappingURL=style.css.map */

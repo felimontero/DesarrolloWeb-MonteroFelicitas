@@ -1,0 +1,58 @@
+h1 {
+    border: 10px solid palevioletred;
+}
+
+h2 {
+    @extend h2;
+    text-align: center;
+    color: aliceblue;
+}
+
+.formulario {
+    background-color: pink;
+    padding: 50px;
+    margin-left: 50px;
+    align-items: center;
+    border: solid plum;
+    text-decoration: none;
+    display: flex;
+    border: palevioletred solid 8px;
+}
+
+@mixin all ($padding, $display, $flexDirection, $align) {
+    padding: $padding;
+    display: $display;
+    flex-direction: $flexDirection;
+    align-items: $align;
+}
+
+@media (min-width: 500px) {
+    body {
+        background-color: antiquewhite;
+
+        .formulario {
+            @include all(20px, flex, row, center)
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        body {
+            background-color: whitesmoke;
+
+            .formulario {
+                @include all(50px, flex, row, center)
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        body {
+            background-color: white;
+            .formulario{
+                @include all(50px, flex, row, center )
+            }
+        }
+    }
+
+}
