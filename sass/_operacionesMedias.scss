@@ -1,22 +1,21 @@
 h1 {
     border: 10px solid palevioletred;
-}
-
-h2 {
-    @extend h2;
-    text-align: center;
-    color: aliceblue;
-}
-
-.formulario {
-    background-color: pink;
-    padding: 50px;
-    margin-left: 50px;
-    align-items: center;
-    border: solid plum;
-    text-decoration: none;
-    display: flex;
-    border: palevioletred solid 8px;
+    h2 {
+        @extend h2;
+        text-align: center;
+        color: aliceblue;
+        .formulario {
+            background-color: pink;
+            padding: 50px;
+            margin-left: 50px;
+            align-items: center;
+            border: solid plum;
+            text-decoration: none;
+            display: flex;
+            border: palevioletred solid 8px;
+            width: auto;
+        }
+    }
 }
 
 @mixin all ($padding, $display, $flexDirection, $align) {

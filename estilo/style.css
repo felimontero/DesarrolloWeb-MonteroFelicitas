@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +15,21 @@ header {
   align-items: center;
   text-align: center;
 }
+
 header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
 }
+
 header nav ul li {
   list-style-type: none;
   background-color: pink;
   display: flex;
   text-align: center;
 }
+
 header nav ul li a {
   text-decoration: none;
   color: palevioletred;
@@ -56,6 +60,7 @@ h2 {
   body {
     background-color: antiquewhite;
   }
+
   body .formulario {
     padding: 20px;
     display: flex;
@@ -63,10 +68,12 @@ h2 {
     align-items: center;
   }
 }
+
 @media (min-width: 500px) and (min-width: 768px) {
   body {
     background-color: whitesmoke;
   }
+
   body .formulario {
     padding: 50px;
     display: flex;
@@ -74,10 +81,12 @@ h2 {
     align-items: center;
   }
 }
+
 @media (min-width: 500px) and (min-width: 1024px) {
   body {
     background-color: white;
   }
+
   body .formulario {
     padding: 50px;
     display: flex;
@@ -85,6 +94,7 @@ h2 {
     align-items: center;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -105,6 +115,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  width: auto;
 }
 
 nav ul {
@@ -128,6 +139,7 @@ footer {
   margin-right: -50px;
   align-items: center;
   background-color: rosybrown;
+  width: auto;
 }
 
 a {
@@ -143,6 +155,7 @@ h1 {
   top: 20px;
   text-align: center;
   justify-content: center;
+  width: auto;
 }
 
 h2 {
@@ -177,6 +190,7 @@ p {
   width: 300px;
   height: 250px;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 aside {
@@ -215,6 +229,7 @@ aside {
   text-decoration: none;
   display: flex;
   border: palevioletred solid 8px;
+  width: auto;
 }
 
 .ubic {
@@ -300,6 +315,7 @@ footer {
   margin-top: 1.5em;
   align-items: center;
   background-color: rosybrown;
+  width: auto;
 }
 
 .fotos {
@@ -362,11 +378,12 @@ h1 {
 
 .envoltura {
   background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1.5em;
   display: grid;
   align-items: center;
   gap: 2em;
-  min-width: 100vh;
   grid-template-areas: "header" "nav" "h1" "fotos" "cabañas" "sidebar" "footer";
 }
 
@@ -418,6 +435,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "nav" "h1" "cabañas" "footer";
   }
+
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -425,18 +443,21 @@ h1 {
     text-decoration: none;
     align-items: center;
   }
+
   nav ul li {
     list-style-type: none;
     text-decoration: none;
   }
+
   nav ul,
-.cabañas {
+  .cabañas {
     color: black;
     align-items: center;
     text-decoration: none;
     justify-content: center;
     list-style-type: none;
   }
+
   .fotos {
     background-color: white;
     display: grid;
@@ -451,13 +472,16 @@ h1 {
     margin-left: 20px;
     margin-top: 15px;
   }
+
   footer {
     padding: 3em;
     margin-bottom: 0px;
     margin-top: 50px;
     align-items: center;
     background-color: rosybrown;
+    width: auto;
   }
+
   .flexContainer {
     height: 100%;
     width: 100%;
@@ -471,6 +495,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
   }
+
   .row {
     display: flex;
     flex-direction: column;
@@ -478,11 +503,13 @@ h1 {
     padding: 3em;
     background-color: bisque;
   }
+
   .col {
     padding: 5em;
     margin: 10px;
     flex-direction: column;
   }
+
   .formulario {
     background-color: pink;
     padding: 20px;
@@ -493,21 +520,27 @@ h1 {
     display: flex;
     flex-direction: row;
     border: palevioletred solid 8px;
+    width: auto;
   }
+
   header {
     font-size: large;
     display: grid;
     justify-content: center;
+    width: auto;
   }
+
   header,
-.text {
+  .text {
     color: whitesmoke;
   }
+
   a {
     text-decoration: none;
     color: palevioletred;
     list-style: none;
   }
+
   h1 {
     color: black;
     margin: 30px 40px 30px 40px;
@@ -515,10 +548,13 @@ h1 {
     top: 20px;
     text-align: center;
     justify-content: center;
+    width: auto;
   }
+
   .box {
     margin-left: 20px;
   }
+
   .ubic {
     margin-bottom: 20px;
     margin-left: 10px;
@@ -526,6 +562,7 @@ h1 {
     height: 100%;
   }
 }
+
 @media (min-width: 768px) {
   .envoltura {
     background-color: antiquewhite;
@@ -537,6 +574,7 @@ h1 {
     max-width: 100vh;
     grid-template-columns: 1fr;
   }
+
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -544,34 +582,41 @@ h1 {
     text-decoration: none;
     align-items: center;
   }
+
   nav ul li {
     list-style-type: none;
     text-decoration: none;
     justify-content: center;
   }
+
   nav ul,
-.cabañas {
+  .cabañas {
     color: black;
     align-items: center;
     text-decoration: none;
     justify-content: center;
     list-style-type: none;
   }
+
   header {
     font-size: large;
     display: grid;
     justify-content: center;
+    width: auto;
   }
+
   header,
-.text {
+  .text {
     color: aliceblue;
     min-width: 100%;
   }
+
   a {
     text-decoration: none;
     color: palevioletred;
     list-style: none;
   }
+
   .fotos {
     background-color: white;
     display: grid;
@@ -585,6 +630,7 @@ h1 {
     border: 8px solid lightpink;
     margin: 3em;
   }
+
   footer {
     padding: 3em;
     margin-bottom: 0px;
@@ -592,7 +638,9 @@ h1 {
     margin-right: -50px;
     align-items: center;
     background-color: rosybrown;
+    width: auto;
   }
+
   .flexContainer {
     height: 100%;
     width: 100%;
@@ -605,6 +653,7 @@ h1 {
     margin: 20px 30px 20px 30px;
     justify-content: space-between;
   }
+
   .row {
     display: flex;
     flex-direction: row;
@@ -612,11 +661,13 @@ h1 {
     padding: 10px;
     background-color: bisque;
   }
+
   .col {
     padding: 10px;
     margin: 10px;
     flex-direction: row;
   }
+
   .formulario {
     background-color: pink;
     padding: 50px;
@@ -627,6 +678,7 @@ h1 {
     display: flex;
     border: palevioletred solid 8px;
   }
+
   h1 {
     color: black;
     margin: 30px 40px 30px 40px;
@@ -635,6 +687,7 @@ h1 {
     text-align: center;
     justify-content: center;
   }
+
   .box1 {
     background-color: palevioletred;
     transition-property: all;
@@ -644,6 +697,7 @@ h1 {
     width: 100%;
   }
 }
+
 @media (min-width: 1024px) {
   body {
     text-align: center;
@@ -655,33 +709,40 @@ h1 {
     text-decoration: none;
     width: 100%;
   }
+
   header {
     font-size: large;
     display: grid;
     justify-content: center;
     background-color: palevioletred;
+    width: auto;
   }
+
   header,
-.text {
+  .text {
     color: aliceblue;
-    width: 100%;
+    width: auto;
   }
+
   nav ul li {
     list-style-type: none;
     text-decoration: none;
   }
+
   nav ul,
-.cabañas {
+  .cabañas {
     color: black;
     list-style: none;
     text-decoration: none;
     min-width: 100vh;
   }
+
   a {
     text-decoration: none;
     color: palevioletred;
     list-style: none;
   }
+
   .envoltura {
     background-color: whitesmoke;
     margin-bottom: 1.5em;
@@ -690,13 +751,16 @@ h1 {
     min-width: 100%;
     gap: 2em;
     grid-template-columns: 1fr;
+    width: auto;
   }
+
   .cabañas {
     padding: 1.5em;
     height: auto;
     margin: 0;
     text-align: center;
   }
+
   .fotos {
     background-color: white;
     display: grid;
@@ -708,18 +772,20 @@ h1 {
     margin-left: 20px;
     margin-top: 15px;
   }
+
   .flexContainer {
-    height: 100%;
-    width: 100%;
+    height: 400px;
+    width: 350px;
     background-color: antiquewhite;
     padding: 30px;
     display: flex;
     flex-direction: row;
     width: 350px;
     border: solid 8px pink;
-    margin: 20px 30px 20px 30px;
+    margin: auto;
     justify-content: space-between;
   }
+
   footer {
     padding: 3em;
     margin-bottom: 0px;
@@ -727,19 +793,23 @@ h1 {
     margin-right: -50px;
     align-items: center;
     background-color: rosybrown;
+    width: auto;
   }
+
   .row {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    background-color: bisque;
+    background-color: cornsilk;
   }
+
   .col {
     padding: 10px;
     margin: 10px;
     flex-direction: row;
   }
+
   .formulario {
     background-color: pink;
     padding: 50px;
@@ -749,11 +819,14 @@ h1 {
     text-decoration: none;
     display: flex;
     border: palevioletred solid 8px;
+    width: auto;
   }
+
   .box:hover {
     border-radius: 6px;
     transform: scale(4);
   }
+
   .box1 {
     background-color: palevioletred;
     transition-property: all;
@@ -762,6 +835,7 @@ h1 {
     height: 100%;
     width: 100%;
   }
+
   h1 {
     color: black;
     margin: 30px 30px 30px 30px;
@@ -769,10 +843,11 @@ h1 {
     top: 20px;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    width: auto;
     height: 100%;
   }
 }
+
 .lightpink {
   background-color: lightpink;
 }
@@ -780,4 +855,6 @@ h1 {
 .imag {
   width: 75px;
   height: 75px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
