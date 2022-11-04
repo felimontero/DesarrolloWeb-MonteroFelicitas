@@ -189,28 +189,6 @@ aside {
   border: pink;
 }
 
-.descri {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 8px solid lightpink;
-  padding: 20px;
-  background-color: antiquewhite;
-  margin: 20px 30px 20px 30px;
-}
-
-.ima {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  border: 8px solid lightpink;
-  height: 400px;
-  width: 400px;
-  margin-top: 80px;
-  margin-left: 60px;
-}
-
 .formulario {
   background-color: pink;
   padding: 10px;
@@ -221,12 +199,6 @@ aside {
   display: flex;
   border: palevioletred solid 8px;
   width: auto;
-}
-
-.ubic {
-  margin-bottom: 20px;
-  width: 100%;
-  height: 100%;
 }
 
 .box:hover {
@@ -263,6 +235,7 @@ header {
   margin-left: 2px;
   margin-right: 2px;
   flex-direction: column;
+  background-color: palevioletred;
 }
 
 header,
@@ -311,21 +284,6 @@ footer {
   align-items: center;
   background-color: rosybrown;
   width: auto;
-}
-
-.fotos {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 5px;
-  justify-items: center;
-  width: 200px;
-  height: 150px;
-  border: 8px solid lightpink;
-  margin-left: 20px;
-  margin-top: 15px;
-  align-items: center;
 }
 
 .row {
@@ -392,19 +350,6 @@ h1 {
   grid-template-areas: "header" "nav" "h1" "fotos" "cabañas" "sidebar" "footer";
 }
 
-.flexContainer {
-  height: 100%;
-  width: 100%;
-  background-color: antiquewhite;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  width: 150px;
-  border: solid 8px pink;
-  margin: 20px 30px 20px 30px;
-  justify-content: space-between;
-}
-
 .row {
   grid-area: row;
 }
@@ -468,21 +413,6 @@ h1 {
     list-style-type: none;
   }
 
-  .fotos {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-    justify-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 250px;
-    border: 8px solid lightpink;
-    margin-left: 20px;
-    margin-top: 15px;
-  }
-
   footer {
     padding: 3em;
     margin-bottom: 0px;
@@ -490,20 +420,6 @@ h1 {
     align-items: center;
     background-color: rosybrown;
     width: auto;
-  }
-
-  .flexContainer {
-    height: 100%;
-    width: 100%;
-    background-color: antiquewhite;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 250px;
-    border: solid 8px pink;
-    margin: 20px 30px 20px 30px;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .row {
@@ -564,13 +480,6 @@ h1 {
 
   .box {
     margin-left: 20px;
-  }
-
-  .ubic {
-    margin-bottom: 20px;
-    margin-left: 10px;
-    width: 100%;
-    height: 100%;
   }
 
   .logo {
@@ -640,19 +549,6 @@ h1 {
     list-style: none;
   }
 
-  .fotos {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
-    justify-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 350px;
-    border: 8px solid lightpink;
-    margin: 3em;
-  }
 
   footer {
     padding: 1em;
@@ -662,19 +558,6 @@ h1 {
     align-items: center;
     background-color: rosybrown;
     width: auto;
-  }
-
-  .flexContainer {
-    height: 100%;
-    width: 100%;
-    background-color: antiquewhite;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 350px;
-    border: solid 8px pink;
-    margin: 20px 30px 20px 30px;
-    justify-content: space-between;
   }
 
   .row {
@@ -788,38 +671,6 @@ h1 {
     width: auto;
   }
 
-  .cabañas {
-    padding: 1.5em;
-    height: auto;
-    margin: 0;
-    align-items: center;
-  }
-
-  .fotos {
-    background-color: white;
-    display: grid;
-    gap: 5px;
-    justify-items: center;
-    width: 475px;
-    height: 450px;
-    border: 8px solid lightpink;
-    margin-left: 20px;
-    margin-top: 15px;
-  }
-
-  .flexContainer {
-    height: 400px;
-    width: 350px;
-    background-color: antiquewhite;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 350px;
-    border: solid 8px pink;
-    margin: auto;
-    justify-content: space-between;
-  }
-
   footer {
     padding: 10px;
     margin-bottom: 0px;
@@ -891,11 +742,6 @@ h1 {
 
 .lightpink {
   background-color: lightpink;
-}
-
-.imag {
-  width: 75px;
-  height: 75px;
 }
 
 /*# sourceMappingURL=style.css.map */
